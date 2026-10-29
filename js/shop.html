@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore products in our simple online shopping catalog.">
+    <title>ShopEasy | Product Catalog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/shop.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>ShopEasy</h2>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Portfolio</a>
+            <a href="shop.html" aria-current="page">Shop</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Discover Your Next Favourite</h1>
+            <p>A simple online product catalog built with HTML, CSS and JavaScript.</p>
+
+            <label for="search">Search products</label>
+            <input id="search" type="search" placeholder="Search products...">
+
+            <label for="category">Category</label>
+            <select id="category">
+                <option value="all">All categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home</option>
+            </select>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <p id="product-status" role="status" aria-live="polite"></p>
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: ₹0</p>
+            <button id="clear-cart" type="button">Clear Cart</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopEasy | Demo E-commerce Project</p>
+    </footer>
+</body>
+
+</html>
