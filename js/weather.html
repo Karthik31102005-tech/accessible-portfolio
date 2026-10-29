@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>Weather Dashboard</h2>
+        <nav>
+            <a href="index.html">Back to Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Check the Weather 🌦️</h1>
+            <p>Enter a city to see its current weather conditions.</p>
+
+            <form id="weather-form">
+                <label for="city-input">City name</label>
+                <input type="text" id="city-input" placeholder="e.g. Chennai" required>
+                <button type="submit">Search Weather</button>
+            </form>
+
+            <p id="weather-status" role="status" aria-live="polite"></p>
+
+            <article id="weather-result" hidden>
+                <h2 id="city-name"></h2>
+                <p id="weather-description"></p>
+                <h2 id="temperature"></h2>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Weather Dashboard | Powered by Open-Meteo</p>
+    </footer>
+</body>
+
+</html>
